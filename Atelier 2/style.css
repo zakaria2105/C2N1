@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position-y: 270px;
+  font-size: 14px;
+  background-color: hsl(229, 57%, 11%);
+}
+section {
+  width: 58%;
+  margin: 14% auto;
+  display: flex;
+  justify-content: space-between;
+}
+article {
+  width: 250px;
+  height: 130px;
+  margin-top: 10px;
+  padding: 30px 0px 0px 30px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px 70px 10px 10px;
+}
+header {
+  margin-bottom: 20px;
+}
+footer,
+header {
+  display: flex;
+  justify-content: start;
+}
+footer img {
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+main {
+  height: 170px;
+  position: relative;
+}
+p {
+  margin-top: 10px;
+}
+aside {
+  background-color: hsl(228, 56%, 26%);
+  color: white;
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  padding: 20px 10px 0px 20px;
+  margin-top: 40px;
+}
+nav {
+  background-color: white;
+  color: black;
+  width: 130px;
+  height: 50px;
+  border-radius: 10px 10px 0px 10px;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.Triangle {
+  width: 0;
+  height: 0;
+  border-top: 30px solid white;
+  border-left: 30px solid transparent;
+  position: absolute;
+  right: 0px;
+}
+span {
+  font-size: 14px;
+}
+div {
+  height: 15px;
+  border-radius: 10px;
+}
+.one {
+  background-color: hsl(229, 57%, 11%);
+  width: 400px;
+  margin-top: 20px;
+}
+.two {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  width: 300px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.three {
+  background-color: white;
+  width: 15px;
+}
+h6 {
+  margin-top: 10px;
+}
+h6:first-of-type {
+  float: left;
+}
+h6:last-of-type {
+  float: right;
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url(/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  aside {
+    width: 80%;
+  }
+  nav {
+    width: 40%;
+    border-radius: 10px;
+    position: absolute;
+    right: 38%;
+    top: 80%;
+  }
+  .Triangle {
+    display: none;
+  }
+  .one {
+    width: 90%;
+  }
+  .two {
+    width: 80%;
+  }
+}
